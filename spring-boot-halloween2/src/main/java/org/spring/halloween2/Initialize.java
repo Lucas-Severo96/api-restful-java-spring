@@ -39,8 +39,8 @@ public class Initialize implements CommandLineRunner {
         Random gen = new Random();
         for(int i = 0; i < 5 ; i++){
             user = new User();
-            user.setUsername("Luc" + gen.nextLong(1000));
-            user.setPassword("Pass" + gen.nextLong(1000));
+            user.setUsername("Lucas" + gen.nextLong(1000));
+            user.setPassword("Password" + gen.nextLong(1000));
             repository.save(user);
         }
 
